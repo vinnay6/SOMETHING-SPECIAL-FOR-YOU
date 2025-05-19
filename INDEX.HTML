@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Happy Birthday Anshika</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to top, #fff0f5, #ffe6f0);
+      font-family: 'Segoe UI', cursive;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      overflow: hidden;
+      flex-direction: column;
+    }
+
+    h1 {
+      font-size: 3em;
+      color: #d63384;
+      animation: glow 2s infinite alternate;
+      margin: 10px;
+    }
+
+    .name {
+      font-size: 2.5em;
+      color: #a0005c;
+      font-weight: bold;
+      animation: glow 2s infinite alternate;
+      margin-bottom: 10px;
+    }
+
+    .message {
+      font-size: 1.2em;
+      color: #4a0033;
+      text-align: center;
+      max-width: 600px;
+      margin: 20px;
+      animation: fadeIn 2s ease-in-out;
+    }
+
+    .cake {
+      position: relative;
+      width: 160px;
+      height: 200px;
+      margin-top: 30px;
+    }
+
+    .layer {
+      position: absolute;
+      background: #ff8fab;
+      border-radius: 10px;
+      box-shadow: inset 0 0 5px #c2185b;
+    }
+
+    .layer1 {
+      width: 160px;
+      height: 50px;
+      top: 140px;
+    }
+
+    .layer2 {
+      width: 120px;
+      height: 50px;
+      top: 90px;
+      left: 20px;
+    }
+
+    .layer3 {
+      width: 80px;
+      height: 50px;
+      top: 40px;
+      left: 40px;
+    }
+
+    .candle {
+      position: absolute;
+      width: 8px;
+      height: 30px;
+      background: #ffcc00;
+      border-radius: 2px;
+    }
+
+    .flame {
+      position: absolute;
+      top: -12px;
+      left: -3px;
+      width: 14px;
+      height: 14px;
+      background: radial-gradient(circle, #ffff66 40%, #ff9900 80%);
+      border-radius: 50%;
+      animation: flicker 0.4s infinite alternate;
+      box-shadow: 0 0 8px #ffcc00;
+    }
+
+    .candle1 { top: 10px; left: 50px; }
+    .candle2 { top: 10px; left: 65px; }
+    .candle3 { top: 10px; left: 80px; }
+    .candle4 { top: 10px; left: 95px; }
+    .candle5 { top: 10px; left: 110px; }
+
+    @keyframes flicker {
+      0% { transform: scale(1); opacity: 1; }
+      100% { transform: scale(1.2); opacity: 0.7; }
+    }
+
+    @keyframes glow {
+      from { text-shadow: 0 0 10px #ffcce6; }
+      to { text-shadow: 0 0 25px #ff66cc; }
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .balloon {
+      position: absolute;
+      width: 40px;
+      height: 60px;
+      border-radius: 50% 50% 45% 45%;
+      animation: float 6s linear infinite;
+    }
+
+    .balloon::after {
+      content: "";
+      position: absolute;
+      bottom: -20px;
+      left: 50%;
+      width: 2px;
+      height: 20px;
+      background: #999;
+    }
+
+    @keyframes float {
+      0% { bottom: -100px; transform: translateX(0); }
+      50% { transform: translateX(10px); }
+      100% { bottom: 110%; transform: translateX(-10px); }
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Happy Birthday</h1>
+  <div class="name">Anshika</div>
+  <div class="message">
+    May your special day be filled with love, laughter, and joy.<br>
+    You’re a light in so many lives — especially mine.<br>
+    Keep shining brightly, Anshika!
+  </div>
+
+  <div class="cake">
+    <div class="layer layer1"></div>
+    <div class="layer layer2"></div>
+    <div class="layer layer3"></div>
+
+    <!-- Glowing Candles -->
+    <div class="candle candle1"><div class="flame"></div></div>
+    <div class="candle candle2"><div class="flame"></div></div>
+    <div class="candle candle3"><div class="flame"></div></div>
+    <div class="candle candle4"><div class="flame"></div></div>
+    <div class="candle candle5"><div class="flame"></div></div>
+  </div>
+
+  <!-- Balloons -->
+  <div class="balloon" style="left: 5%; animation-delay: 0s; background: #ff4da6;"></div>
+  <div class="balloon" style="left: 15%; animation-delay: 1s; background: #66ccff;"></div>
+  <div class="balloon" style="left: 25%; animation-delay: 2s; background: #ffa31a;"></div>
+  <div class="balloon" style="left: 35%; animation-delay: 3s; background: #b366ff;"></div>
+  <div class="balloon" style="left: 45%; animation-delay: 4s; background: #00cc99;"></div>
+  <div class="balloon" style="left: 55%; animation-delay: 1.5s; background: #ff6699;"></div>
+  <div class="balloon" style="left: 65%; animation-delay: 2.5s; background: #99cc00;"></div>
+  <div class="balloon" style="left: 75%; animation-delay: 0.5s; background: #ffcc00;"></div>
+  <div class="balloon" style="left: 85%; animation-delay: 3.5s; background: #00b3b3;"></div>
+  <div class="balloon" style="left: 95%; animation-delay: 2s; background: #ff9999;"></div>
+
+</body>
+</html>
